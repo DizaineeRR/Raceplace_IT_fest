@@ -1,0 +1,56 @@
+.main_text_pattern{
+    text-transform: uppercase;
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.maininfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.maininfo_titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    max-height: 306px;
+}
+
+.maininfo_title{
+    font-size: 40px;
+    text-decoration: none;
+    padding: 18px;
+}
+
+.maininfo_text{
+    max-width: 610px;
+    font-size: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 73px 0px 63px 0px;
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.maininfo_buttons{
+    display: flex;
+    justify-content: space-between;
+    min-width: 530px;
+}
+
+.maininfo_button_div{
+    text-align: center;
+    min-width: 198px;
+    border: 5px #FFBA24 solid;
+    border-radius: 12px;
+    padding: 7px 0px 7px 0px;
+    box-shadow: 0px 7px 80px #FFBA24;
+}
+
+.maininfo_button{
+    min-width: 150px;
+    font-size: 24px;
+}

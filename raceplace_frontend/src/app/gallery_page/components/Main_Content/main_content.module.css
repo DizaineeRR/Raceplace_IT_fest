@@ -1,0 +1,84 @@
+.main{
+    width: 1338px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.content_block_div{
+    max-width: 1338px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.content_block_1{
+    justify-content: space-between;
+}
+
+.content_block_2{
+    flex-direction: column;
+}
+
+.content_block_3{
+    justify-content: space-evenly;
+}
+
+.gallery_content_div_text{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery_content_div_text_1{
+    background: url('/Gallery_TCM_IMGtext.svg'); 
+    width: 425px;
+    height: 500px;
+    
+}
+
+.gallery_content_div_text_2{
+    background: url('/Gallery_FH5_IMGtext.svg'); 
+    width: 361px;
+    height: 494px;
+}
+
+.gallery_content_div_text_3{
+    background: url('/Gallery_NFSRivals_IMGtext.svg'); 
+    width: 913px;
+    height: 398px;
+}
+
+.gallery_content_div_text_4{
+    background: url('/Gallery_GT7_IMGtext.svg'); 
+    width: 1110px;
+    height: 212px;
+}
+
+.content_div_title{
+    width: 352px;
+    font-size: 36px;
+    text-transform: capitalize;
+    color: black;
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.content_div_title_2{
+    width: 860px;
+    font-size: 64px;
+    color: black;
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content_div_title_3{
+    font-size: 96px;
+    color: black;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, #2747F4, #A12D1E);
+    background-clip: text;
+    color: transparent;
+}

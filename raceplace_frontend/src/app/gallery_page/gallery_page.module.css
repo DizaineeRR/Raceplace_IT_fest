@@ -1,0 +1,39 @@
+.wrapper{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.main_background{
+    background: url('/Gallery_background.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1024px;
+}
+
+.main_gallery_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery_title_miror{
+    position: absolute;
+    width: 646px;
+    height: 201px;
+    z-index: 0;
+    top: 120px;
+    left: 525px;
+}
+
+
+.gallery_title{
+    position: absolute;
+    font-size: 128px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+    top: 170px;
+}

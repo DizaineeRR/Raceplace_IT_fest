@@ -1,0 +1,25 @@
+.container{
+    margin: 0 auto;
+    width: 1440px;
+    align-items: center;
+}
+
+.main_background{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1440px;
+}
+
+.main_background_1{
+    background: url('/News_page_background.svg');
+    height: 1024px; 
+}
+
+.page_title{
+    font-size: 64px;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, #C7C7C7, #E7897C);
+    background-clip: text;
+    color: transparent;
+}
