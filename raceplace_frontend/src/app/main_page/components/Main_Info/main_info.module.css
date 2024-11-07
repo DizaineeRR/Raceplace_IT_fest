@@ -1,6 +1,7 @@
 .main_text_pattern{
     text-transform: uppercase;
     text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .maininfo{
