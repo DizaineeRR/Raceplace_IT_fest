@@ -6,8 +6,6 @@ import { GameService } from './games/games.service';
 @Controller('games') 
 export class AppController {
   constructor(private readonly gameService: GameService) {}
-
-
   @Get()
   getAllGames() {
     return this.gameService.getAllGames();
