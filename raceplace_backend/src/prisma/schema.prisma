@@ -20,8 +20,14 @@ model User {
 }
 
 model games {
+  id           Int      @id @default(autoincrement()) 
+  name         String   @unique                      
+  image        String?                               
+  image_back   String?                               
+} 
+
+model main_back {
   id           Int      @id @default(autoincrement()) // Уникальный идентификатор игры
   name         String   @unique                      // Название игры
   image        String?                               // URL изображения игры
-  image_back   String?                               // URL изображения обратной стороны игры (если нужно)
 }
