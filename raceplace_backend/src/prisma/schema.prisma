@@ -25,9 +25,3 @@ model games {
   image        String?                               
   image_back   String?                               
 } 
-
-model main_back {
-  id           Int      @id @default(autoincrement()) // Уникальный идентификатор игры
-  name         String   @unique                      // Название игры
-  image        String?                               // URL изображения игры
-}

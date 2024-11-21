@@ -138,6 +138,7 @@ type Game = {
   id: number;
   name: string;
   image: string;
+  image_back: string;
 };
 
 export default function Main_Content() {
@@ -159,55 +160,71 @@ export default function Main_Content() {
 
   return (
     <main className={styles.main}>
-      {/* {games.map((game) => ( */}
-        <div className={styles.content_block_div}>
-          {/* Первый блок контента */}
-          <div className={styles.content_block_1}>
-            <Gallery_TCM_Image />
-            {/* <img src={game.image} alt={game.name || "No name"} /> */}
-            <div className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_1}`}>
-              <h5 style={{ marginTop: 70 }} className={styles.content_div_title}>
-                The Crew Motorfest Official Trailer Picture
-              </h5>
+      {games.length > 0 && (
+        <>
+          <div className={styles.content_block_div}>
+            {/* Первый блок контента */}
+            <div className={styles.content_block_1}>
+                  {/* Отображаем только первое изображение из массива */}
+                  <img style={{width:925, height:550}} src={games[0].image} alt={games[0].name || "No name"} />
+
+                  <div className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_1}`}>
+                    <h5 style={{ marginTop: 70 }} className={styles.content_div_title}>
+                      The Crew Motorfest Official Trailer Picture
+                    </h5>
+                  </div>
+            </div>
+            {/* Второй блок контента */}
+            {games.length > 0 && (
+              <>
+            <div className={styles.content_block_1}>
+              <div className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_2}`}>
+                <h5 style={{ marginTop: 230 }} className={styles.content_div_title}>
+                  Forza Horizon 5 Official Announcement Picture
+                </h5>
+              </div>
+              <img style={{width:1015, height:539}} src={games[1].image} alt={games[1].name || "No name"} />
+            </div>
+              </>
+            )}
+            {/* Третий блок контента */}
+            <div className={styles.content_block_2}>
+            <img style={{width:1366, height:736}} src={games[2].image} alt={games[2].name || "No name"} />
+              <div className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_3}`}>
+                <h5 style={{ marginTop: 80 }} className={styles.content_div_title_2}>
+                  The NEED FOR SPEED: Rivals 2013
+                </h5>
+              </div>
+            </div>
+
+            {/* Четвертый блок контента */}
+            <div className={styles.content_block_3}>
+              <div className={styles.content_block_4}>
+                <img style={{width:874, height:410}} src={games[3].image} alt={games[3].name || "No name"} />
+                <img style={{width:387, height:90}} src={games[3].image_back} alt={games[3].name || "No name"} />
+              </div>
+              <div className={styles.content_block_4}>
+                <img style={{width:952, height:465}} src={games[4].image} alt={games[4].name || "No name"} />
+                <img style={{width:258, height:95}} src={games[4].image_back} alt={games[4].name || "No name"} />
+              </div>
+              <div className={styles.content_block_4}>
+                <img style={{width:874, height:579}} src={games[5].image} alt={games[5].name || "No name"} />
+                <img style={{width:405, height:454}} src={games[5].image_back} alt={games[5].name || "No name"} />
+              </div>
+            </div>
+
+            {/* Пятый блок контента */}
+            <div className={styles.content_block_2}>
+            <img style={{width:1388, height:844}} src={games[6].image} alt={games[6].name || "No name"} />
+              <div style={{ marginTop: 30 }} className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_4}`}>
+                <h5 style={{ marginTop: 30 }} className={styles.content_div_title_3}>
+                  Gorgeous Gran Turismo 7
+                </h5>
+              </div>
             </div>
           </div>
-
-          {/* Второй блок контента */}
-          <div className={styles.content_block_1}>
-            <div className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_2}`}>
-              <h5 style={{ marginTop: 230 }} className={styles.content_div_title}>
-                Forza Horizon 5 Official Announcement Picture
-              </h5>
-            </div>
-            {/* <img src={game.image} alt={game.name || "No name"} /> */}
-          </div>
-
-          {/* Третий блок контента */}
-          <div className={styles.content_block_2}>
-            {/* <img src={game.image} alt={game.name || "No name"} /> */}
-            <div className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_3}`}>
-              <h5 style={{ marginTop: 80 }} className={styles.content_div_title_2}>
-                The NEED FOR SPEED: Rivals 2013
-              </h5>
-            </div>
-          </div>
-
-          {/* Четвертый блок контента */}
-          <div className={styles.content_block_3}>
-            {/* <img src={game.image } alt={game.name || "No name"} /> */}
-          </div>
-
-          {/* Пятый блок контента */}
-          <div className={styles.content_block_2}>
-            {/* <img src={game.image} alt={game.name || "No name"} /> */}
-            <div style={{ marginTop: 30 }} className={`${styles.gallery_content_div_text} ${styles.gallery_content_div_text_4}`}>
-              <h5 style={{ marginTop: 30 }} className={styles.content_div_title_3}>
-                Gorgeous Gran Turismo 7
-              </h5>
-            </div>
-          </div>
-        </div>
-      {/* ))} */}
+        </>
+      )}
     </main>
   );
 }
