@@ -38,6 +38,22 @@
     color: white;
 }
 
+.main_block_text_1{
+    max-width: 300px;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 25px;
+}
+
+.main_block_text_2_div{
+    text-align: center;
+    max-width: 150px;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: white;
+}
+
 
 .main_blocks_1{
     display: flex;
@@ -70,11 +86,24 @@
     height: 320px;
 }
 
+.main_block_1_div{
+    margin-top: 55px;
+}
+
 .main_block_2{
     background-image: url('/Content_block_2.svg');
     width: 786px;
     height: 615px;
 }
+
+.main_block_2_div{
+    margin-top: 60px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main_block_3{
     background-image: url('/Content_block_3.svg');
     width: 281px;

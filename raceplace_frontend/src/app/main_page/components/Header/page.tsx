@@ -24,7 +24,7 @@ export default function Header(){
             </div>
             <nav className={styles.header_links}>
                 <a href="#" className={styles.header_link} target="_blank" rel="noopener noreferrer">GAME LIST</a>
-                <a href="#" className={styles.header_link} target="_blank" rel="noopener noreferrer">GAME NEWS</a>
+                <a href="#" className={styles.header_link} target="_blank" rel="noopener noreferrer">MARKET</a>
                 <a href="#" className={styles.header_link} target="_blank" rel="noopener noreferrer">GALLERY</a>
             </nav>
         </header>

@@ -99,33 +99,33 @@ export default function Main_content() {
         <div className={styles.main_background}>
             <main className={styles.main}>
                 <figure style={{marginTop: 0}} className={`${styles.main_block_second} ${styles.main_block_1}`}>
-                    <div>
+                    <div className={styles.main_block_1_div}>
                         <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}>asseta corsa compitizone</h5>
-                        <figcaption className={styles.main_block_text}>asseta corsa compitizone</figcaption>
+                        <figcaption className={styles.main_block_text}>Race Simulator</figcaption>
                     </div>
                 </figure>
                 <div className={styles.main_blocks_1}>
                     <figure className={`${styles.main_block} ${styles.main_block_2}`}>
-                        <h5  className={`${styles.main_block_title} ${styles.main_block_title_2}`}>topic new</h5>                    
+                        <h5  className={`${styles.main_block_title} ${styles.main_block_title_2}`}>Forza Motorsport</h5>                    
                     </figure>
                     <figure className={`${styles.main_block} ${styles.main_block_3}`}>
-                        <div>
-                        <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}>topic new</h5>
-                        <figcaption className={styles.main_block_text}>game name</figcaption>
+                        <div className={styles.main_block_1_div}>
+                        <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}>The Crew 2</h5>
+                        <figcaption className={styles.main_block_text}>Race Arcade</figcaption>
                         </div>
                     </figure>
                 </div>
                 <div className={styles.main_blocks_1}>
                     <figure className={`${styles.main_block_second} ${styles.main_block_4}`}>
-                        <div>
-                            <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}>topic new</h5>
-                            <figcaption className={styles.main_block_text}>asseta corsa compitizone</figcaption>
+                        <div className={styles.main_block_2_div}>
+                            <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}>Forza Horizon 5</h5>
+                            <figcaption className={styles.main_block_text_2_div}>Freemap - Race Arcade</figcaption>
                         </div>
                     </figure>
                     <figure className={`${styles.main_block} ${styles.main_block_5}`}>
                         <div>
-                            <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}>topic new</h5>
-                            <figcaption className={styles.main_block_text}>forza horizon 4</figcaption>
+                            <h5  className={`${styles.main_block_title} ${styles.main_block_title_1}`}></h5>
+                            <figcaption className={styles.main_block_text_1}>Gran Turismo 7</figcaption>
                         </div>
                     </figure>
                 </div>
